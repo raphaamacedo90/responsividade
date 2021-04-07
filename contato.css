@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+body{
+    margin:0;
+    padding:0;
+    background-image: url("imagem/roxo 2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.header {
+    overflow: hidden;
+    margin: auto;
+    width: 80%;
+    padding: 0;
+    
+}
+.menu{
+    
+    margin: 0;
+    padding: 19px;
+    float: right;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif ;
+    
+}
+
+.link{
+    text-decoration: none;
+    display: inline-block;
+    color:white;
+    margin-left: 30px;
+    list-style: none; 
+        
+}
+
+.logo{
+    
+    float: left;
+    left: 200px;
+    font-family: 'Comfortaa', cursive;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 0;
+    color: white;
+    font-size: 30px;
+}
+.bloco {
+    display: block;
+    border: 2px ridge white ;
+    width: 20%;
+    float: left;
+    margin-left: 400px;
+    margin-top: 100px;
+    padding: 60px;
+    
+}
+.conteudo {
+    font-family: 'Comfortaa', cursive; ;
+}
+
+
+@media screen and (max-width: 500px) {
+
+
+    .logo{
+
+text-align: center; 
+   
+}
+.menu{
+    margin-top: 20px;
+    float: none; 
+    text-align: center;    
+}
+li {
+    float: none;
+    margin-bottom: 5px;
+    padding: 10px;
+
+}
+
+.bloco {
+    display: block;
+    border: 2px ridge white ;
+    width: 20%;
+    float: left;
+    margin-left: 60px;
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+
+
+
+@media screen and (max-width: 700px) 

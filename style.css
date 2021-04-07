@@ -1,57 +1,139 @@
 @charset "UTF-8";
 
 body{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
+    background-image: url("imagem/roxo 2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+
 .header {
     overflow: hidden;
     margin: auto;
     width: 80%;
-    background: #5C57A4;
-    padding: 15px;
-    font-size: 18px;
+    padding: 0;
+    
 }
 .menu{
-    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     margin: 0;
-    padding: 0;
+    padding: 19px;
     float: right;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif ;
+    
 }
-li{
-    float: left;
-    color: white;
-    margin-left: 15px;
+
+.link{
+    text-decoration: none;
+    display: inline-block;
+    color:white;
+    margin-left: 30px;
+    list-style: none; 
+        
 }
+
 .logo{
+    
     float: left;
+    left: 200px;
+    font-family: 'Comfortaa', cursive;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 0;
     color: white;
+    font-size: 30px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.conteudo {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 400px;
+    height: 300px;
+    padding: 60px;
+    font-family: 'Comfortaa', cursive; ;
+    font-size: 20px;
+    text-align: justify;
+    border: 2px solid white;
+    
+}
+.DEV {
+    text-align: center ;
+    font-size: 35px;
+        
 }
 
 
-@media screen and (min-width: 500px) {
-    .header{
-        background: red;
-    }
+@media screen and (max-width: 500px) {
 
-    .logo{
-float: none; 
-text-align: center; 
+
+.logo{
+font-size: 10px;
+margin-left: 60px;
    
 }
 .menu{
-    margin-top: 20px;
-    float: none; 
-    text-align: center;    
-}
-li {
-    float: none;
-    margin-bottom: 5px;
+    margin: 0;
+    display: inline-block;
     padding: 10px;
+    float: left;
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif ;
+         
+}
+.link{
+    text-decoration: none;
+    display: inline-block;
+    color:white;   
+    list-style: none; 
+    margin-left: 20px;
+    text-align: center;
 
 }
-@media screen and (min-width: 700px) {
-    .header{
-        background:gray;
-    }
+
+
+.conteudo {
+    font-size: 15px;
 }
+
+
+
+@media screen and (max-width: 700px) {
+
+.logo{
+    font-size: 25px;
+    margin-left: 50px;
+       
+    }
+    .menu{
+        padding: 5px;
+        font-size: 18px;
+                     
+    }
+    .link{
+        
+        float: left;
+        margin-left: 10px;
+    
+    }
+    
+    .bloco {
+        
+        margin-left: 50px;
+        margin-top: 70px;
+        padding: 30px;
+        
+    }
+    .conteudo {
+        font-size: 20px;
+    }
