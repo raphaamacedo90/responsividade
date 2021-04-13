@@ -6,23 +6,18 @@ body{
     background-image: url("imagem/roxo 2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 
 .header {
-    overflow: hidden;
-    margin: auto;
-    width: 80%;
-    padding: 0;
-    
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;
 }
 .menu{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 0;
-    padding: 19px;
-    float: right;
+    margin: 20px 55px;
     font-size: 20px;
     font-family:Arial, Helvetica, sans-serif ;
     
@@ -30,110 +25,94 @@ body{
 
 .link{
     text-decoration: none;
-    display: inline-block;
     color:white;
     margin-left: 30px;
     list-style: none; 
-        
+      
 }
 
 .logo{
     
-    float: left;
-    left: 200px;
-    font-family: 'Comfortaa', cursive;
-    margin-left: 10px;
-    margin-top: 10px;
-    padding: 0;
+    display: flex;
     color: white;
+    font-family: 'Comfortaa', cursive; ;
+    margin: 20px 55px;
     font-size: 30px;
 }
 .container{
     display: flex;
     align-items: center;
-    justify-content: center;
-    
-
+    justify-content: center;   
+    margin-top: 100px;
+    padding: 0 40px;
 }
 .conteudo {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 400px;
-    height: 300px;
-    padding: 60px;
+    width: 370px;
+    padding: 50px;
     font-family: 'Comfortaa', cursive; ;
     font-size: 20px;
     text-align: justify;
     border: 2px solid white;
     
 }
-.DEV {
+.conteudo h3 {
     text-align: center ;
     font-size: 35px;
+    padding: 30px 0;
         
 }
 
+@media screen and (max-width: 350px) {
 
-@media screen and (max-width: 500px) {
-
-
-.logo{
-font-size: 10px;
-margin-left: 60px;
-   
-}
 .menu{
-    margin: 0;
-    display: inline-block;
-    padding: 10px;
-    float: left;
-    font-size: 12px;
-    font-family:Arial, Helvetica, sans-serif ;
+    flex: none; 
+    
+    
          
 }
-.link{
-    text-decoration: none;
-    display: inline-block;
-    color:white;   
-    list-style: none; 
-    margin-left: 20px;
+.logo{
+
+    font-size: 25px;
+}
+.conteudo{
     text-align: center;
-
 }
-
-
-.conteudo {
-    font-size: 15px;
 }
-
-
 
 @media screen and (max-width: 700px) {
 
-.logo{
-    font-size: 25px;
-    margin-left: 50px;
-       
-    }
+    .header{
+            flex-wrap: wrap;
+            justify-content: center;
+                           
+            
+        }
+    
     .menu{
-        padding: 5px;
-        font-size: 18px;
-                     
+         
+        font-size: 19px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto 20px;
+             
     }
     .link{
         
-        float: left;
         margin-left: 10px;
-    
+        margin: 0 5px;
+          
     }
+    .container{
+        margin-top: 50px;
+        padding: 0 20px;
     
-    .bloco {
-        
-        margin-left: 50px;
-        margin-top: 70px;
-        padding: 30px;
-        
     }
     .conteudo {
-        font-size: 20px;
+        font-size: 15px;
+        text-align: left;
+        padding: 20px;
+    }
+    .conteudo h3 {
+    
+        font-size: 22px;
+    }
     }
